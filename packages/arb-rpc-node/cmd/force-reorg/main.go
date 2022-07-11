@@ -54,7 +54,7 @@ func main() {
 	}
 
 	ctx := context.Background()
-	client, err := ethutils.NewRPCEthClient(*rpcUrl)
+	client, err := ethutils.NewRPCEthClient(ctx, *rpcUrl)
 	if err != nil {
 		panic(err)
 	}
